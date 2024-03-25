@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red130\green53\blue188;\red255\green255\blue254;\red0\green0\blue0;
+\red83\green133\blue132;\red143\green16\blue118;\red153\green115\blue4;\red16\green121\blue2;}
+{\*\expandedcolortbl;;\cssrgb\c58824\c31373\c78431;\cssrgb\c100000\c100000\c99608;\cssrgb\c0\c0\c0;
+\cssrgb\c39216\c58824\c58824;\cssrgb\c63529\c15686\c53725;\cssrgb\c66667\c52157\c0;\cssrgb\c0\c53333\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 sequenceDiagram
+\f1\b0 \cf0 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     \cf5 \strokec5 participant\cf0 \strokec4  \cf6 \strokec6 browser\cf0 \cb1 \strokec4 \
+\cb3     \cf5 \strokec5 participant\cf0 \strokec4  \cf6 \strokec6 server\cf0 \strokec4  \cb1 \
+\cb3      \cb1 \
+\cb3     \cf5 \strokec5 title:\cf7 \strokec7  new note:https://studies.cs.helsinki.fi/exampleapp/notes\cf0 \cb1 \strokec4 \
+\
+\cb3     \cf6 \strokec6 browser
+\f0\b \cf8 \strokec8 ->>
+\f1\b0 \cf6 \strokec6 server
+\f0\b \cf0 \strokec4 :
+\f1\b0 \cf7 \strokec7 Click SAVE new_note script is requested using the POST Method\cf0 \cb1 \strokec4 \
+\cb3     \cf5 \strokec5 activate\cf0 \strokec4  \cf6 \strokec6 server\cf0 \cb1 \strokec4 \
+\cb3     \cf6 \strokec6 browser
+\f0\b \cf8 \strokec8 ->>
+\f1\b0 \cf6 \strokec6 server\cf0 \strokec4 : \cf6 \strokec6 Add\cf0 \strokec4  \cf6 \strokec6 content\cf0 \strokec4 :\cf6 \strokec6 req\cf0 \strokec4 .\cf6 \strokec6 body\cf0 \strokec4 .\cf5 \strokec5 note\cf0 \strokec4  
+\f0\b \cf2 \strokec2 and
+\f1\b0 \cf0 \strokec4  \cf6 \strokec6 date
+\f0\b \cf0 \strokec4 :
+\f1\b0 \cf7 \strokec7  new Date() to the DATA.JSON file\cf0 \cb1 \strokec4 \
+\cb3     \cf5 \strokec5 activate\cf0 \strokec4  \cf6 \strokec6 server\cf0 \cb1 \strokec4 \
+\cb3     \cf6 \strokec6 server
+\f0\b \cf8 \strokec8 -->>
+\f1\b0 \cf6 \strokec6 browser
+\f0\b \cf0 \strokec4 :
+\f1\b0 \cf7 \strokec7  reload the web page for the browser\cf0 \cb1 \strokec4 \
+\cb3     \cf5 \strokec5 activate\cf0 \strokec4  \cf6 \strokec6 browser\cf0 \cb1 \strokec4 \
+\cb3     \cf6 \strokec6 server
+\f0\b \cf8 \strokec8 ->>
+\f1\b0 \cf0 \strokec4  \cf6 \strokec6 browser
+\f0\b \cf0 \strokec4 :
+\f1\b0 \cf7 \strokec7  get notes, main.css, main.js, data.json(updated).\cf0 \cb1 \strokec4 \
+\cb3     \cf5 \strokec5 activate\cf0 \strokec4  \cf6 \strokec6 browser\cf0 \cb1 \strokec4 \
+\
+}
